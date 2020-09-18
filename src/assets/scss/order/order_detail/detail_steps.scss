@@ -1,0 +1,133 @@
+.order-color {
+    background: #303133;
+}
+.supply-color {
+    background: #884f00;
+}
+.urgent-color {
+    background: #77001f;
+}
+.sample-color {
+    background: #546682;
+}
+.timeline-wrapper {
+    display: block;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    color: #fff;
+    background: #303133;
+    text-align: center;
+    margin: 0 auto 35px;
+    border-radius: 4px;
+    .timeline-line {
+        display: block;
+        width: 93.9%;
+        height: 1px;
+        background: #a4e8f1;
+        position: absolute;
+        top: 50%;
+        box-shadow: 0 0 8px #686d6d;
+        left: 3%;
+        margin-left: 2.5px;
+    }
+    .timeline-content-day {
+        height: 100%;
+    }
+    .timeline-content-item {
+        background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+        width: 10%;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        margin-right: -5px;
+        transition: width .5s;
+        z-index: 1;
+        > span {
+            height: 20px;
+            display: block;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            margin-top: -.25em;
+            width: 100%;
+            text-shadow: 0 0 2px black;
+            cursor: pointer;
+            &:before {
+                content: " ";
+                display: block;
+                width: .5em;
+                height: .5em;
+                background: white;
+                margin: 0 auto .5em auto;
+                border-radius: 50%;
+                box-shadow: 0 0 1px black;
+            }
+        }
+        .o-span {
+            color: #13f3ff !important;
+        }
+        .o-span:before {
+            background: #03e8b5 !important;
+            box-shadow: 0 0 10px #03e8b5;
+        }
+        > p {
+            width: 100%;
+            position: absolute;
+            top: 38%;
+            text-align: center;
+        }
+        .timeline-content-item-reveal {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 25px;
+            width: 100%;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                img {
+                    border-radius: 50%;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    height: 90px;
+                    width: 90px;
+                    border: 3px solid white;
+                    box-shadow: 2px 2px 8px #fff;
+                    background-size: contain;
+                }
+                span {
+                    position: absolute;
+                    width: 250%;
+                    margin-left: -75%;
+                    bottom: -1.5em;
+                    left: 0;
+                    font-family: serif;
+                    font-size: 1.1em;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    color: white;
+                    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 1px black;
+                    &:after {
+                        margin-left: .3em;
+                    }
+                }
+            }
+        }
+        &.active {
+            width: 15%;
+            .timeline-content-item-reveal {
+                display: block;
+            }
+        }
+    }
+}
+#progressEffect{
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    left: 20px;
+}

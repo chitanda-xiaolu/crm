@@ -1,0 +1,71 @@
+$colors: red;
+$defaultColor: #606266;
+$lineColor: #DCDFE6;
+$activeColor: #f0f7ff;
+$hoverColor: #f5f7fa;
+$disabledColor: #c1c1c1;
+$linkColor: #409EFF;
+$invalidColor: #b5b4b4;
+$dividerColor: #c57300;
+//padding
+@mixin paddingAll($size: 0px) {
+    padding: $size !important;
+}
+@mixin paddingTop($size: 0px) {
+    padding-top: 14px;
+}
+@mixin paddingRow($size: 0px) {
+    padding: 0 $size !important;
+}
+@mixin paddingCol($size: 0px) {
+    padding: $size 0 !important;
+}
+@mixin paddingLeft($size: 0px) {
+    padding-left: $size !important;
+}
+@mixin paddingRight($size: 0px) {
+    padding-right: $size !important;
+}
+@mixin paddingDbl($size1: 0px, $size2: 0px) {
+    padding: $size1 $size2 !important;
+}
+
+//margin
+@mixin marginTop($size: 0px) {
+    margin-top: $size !important;
+}
+@mixin marginLeft($size: 0px) {
+    margin-left: $size !important;
+}
+@mixin marginRight($size: 0px) {
+    margin-right: $size !important;
+}
+@mixin marginRow($size: 0px) {
+    margin: 0 $size !important;
+}
+@mixin marginBottom($size: 0px) {
+    margin-bottom: $size !important;
+}
+@mixin marginCol($size: 0px) {
+    margin: $size 0 !important;
+}
+@mixin marginDbl($size1: 0px, $size2: 0px) {
+    margin: $size1 $size2 !important;
+}
+@mixin marginAll($size: 0px) {
+    margin: $size !important;
+}
+
+//font-size
+@mixin fontSize($size: 16px) {
+    font-size: $size;
+}
+
+//border
+@mixin borderTop($size: 1px) {
+    border-top: $size solid $lineColor;
+}
+
+@mixin borderBottom($size: 1px) {
+    border-bottom: $size solid $lineColor;
+}

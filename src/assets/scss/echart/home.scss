@@ -1,0 +1,20 @@
+.block {
+    /deep/ .el-select {
+        width: 100px;
+    }
+    /deep/ .el-select:nth-child(2) {
+        margin: 0 10px 0 10px;
+    }
+}
+.funnel-plot {
+    padding-top: 10px;
+}
+.interval-sel {
+    padding-left: 10px;
+}
+/deep/ .el-card__header {
+    @include paddingDbl(12px, 10px);
+}
+/deep/ .el-card__body {
+    @include paddingDbl(10px, 20px);
+}

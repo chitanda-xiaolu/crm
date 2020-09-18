@@ -1,0 +1,74 @@
+.tree-container {
+    height: 100%;
+    background: #fff;
+    -o-user-select: none;
+    -moz-user-select: none; /*火狐 firefox*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10+*/
+    -khtml-user-select :none; /*早期的浏览器*/
+    user-select: none;
+    position: relative;
+    .show-all {
+        position: absolute;
+        bottom: 13px;
+        right: 0px;
+    }
+    .el-tree-node__content {
+        &>span:nth-child(2) {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            &>span:nth-child(1) {
+                display: inline-block;
+                width: 140px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &>span:nth-child(2) {
+                float: right;
+                display: inline-block;
+                margin-right: 6px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: right;
+            }
+        }
+    }
+}
+.el-tree{
+    width: 100%;
+}
+.el-tree,
+.filter-tree {
+    background: #fff;
+    height: calc(100% - 90px) !important;
+    & > div{
+        position: absolute;
+        padding: 5px 0 10px 0;
+    }
+}
+.el-tree-node {
+    width: 294px;
+}
+.tree-top {
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    padding: 9px 0;
+    .tree-title {
+        @include paddingLeft(10px);
+        font-size: 12px;
+    }
+}
+.is-current {
+    background: #f3f5f9;
+}
+.is-focusable {
+    background: #fff;
+}

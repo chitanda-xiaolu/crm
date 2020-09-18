@@ -1,0 +1,35 @@
+.notice-container {
+    padding: 10px 51px 0 51px;
+    /deep/ .ql-container {
+        height: 456px;
+        overflow: auto;
+    }
+    /deep/ .el-input-group__prepend {
+        width: 46%;
+        background: #fff;
+    }
+    /deep/ .select-position {
+        background-color: #409eff;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0px;
+        height: 32px;
+    }
+}
+.row {
+    display: flex;
+}
+.sort /deep/ .el-form-item__content {
+    width: 100%;
+}
+.search-btn {
+    float: right;
+}
+.mavon-editors {
+    height:500px;
+    overflow:auto
+}
+// 离职 无效 默认不展示
+.is-disabled {
+    display: none
+}

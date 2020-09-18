@@ -1,0 +1,47 @@
+.map-box {
+    min-height: 10px;
+    flex: 2;
+    .map-box-left {
+        width: 35%;
+        height: 100%;
+        .map-add {
+            margin: 10px 19px;
+        }
+        .wrapper {
+            overflow: hidden;
+        }
+        .list-item {
+            height: 60px;
+            @include paddingRow(20px);
+            cursor: pointer;
+        }
+        .list-item:hover {
+            background: $hoverColor;
+        }
+        .active {
+            background: $activeColor;
+        }
+        .item-left-top {
+            @include fontSize(16px);
+        }
+        .item-left-bottom {
+            color: #a7a7a7;
+            @include fontSize(12px);
+        }
+        .empty-text {
+            margin: auto;
+        }
+    }
+    .map-box-right {
+        width: 65%;
+        overflow: hidden;
+        @include marginDbl(30px, 15px);
+        box-shadow: 0 0 15px #eee;
+        border-radius: 5px;
+        border: 1px solid #bbb;
+        &>.bmap-container{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.wrapper {
+    overflow: hidden;
+    width: 97%;
+    margin: 0 auto;
+    padding-right: 10px;
+    .wrapper-content {
+        width: 100%;
+        border: 1px solid #fff;
+        & > div {
+            .order-info-container {
+                height: auto;
+                text-align: center;
+                .customer-edit-btn {
+                    height: 40px;
+                    margin-top: -11px;
+                    button {
+                        float: right;
+                    }
+                }
+                /deep/ .el-divider--horizontal {
+                    margin: 14px 0;
+                }
+            }
+        }
+        .order-opt-btns {
+            width: 100%;
+            margin: 15px auto;
+            height: 30px;
+            text-align: center;
+        }
+        .order-detail-top {
+            width: 100%;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            p {
+                color: #c57300;
+                font-size: 15px;
+            }
+            .order-icon {
+                position: relative;
+                padding-left: 5px;
+                top: 5px;
+            }
+        }
+        .top {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            padding:3px 3px 3px 0;
+            justify-content: space-between;
+            span {
+                &:nth-of-type(1) {
+                    margin-left: 20px;
+                    font-size: 16px;
+                    color: #333;
+                }
+                &:nth-of-type(2) {
+                    display: inline-block;
+                    button {
+                        margin-right: 21px;
+                    }
+                }
+            }
+            .code-label {
+                font-style: normal;
+                font-size: 16px;
+                font-weight: 100;
+                margin-right: 7px;
+            }
+        }
+        .go-top {
+            position: absolute;
+            bottom: 51px;
+            cursor: pointer;
+        }
+    }
+}

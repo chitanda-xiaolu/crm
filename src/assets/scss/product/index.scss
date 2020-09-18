@@ -1,0 +1,44 @@
+.form-box {
+    width: 99%;
+}
+.estate-btn {
+    float:right;
+}
+/deep/ .el-upload-list {
+    display: flex;
+}
+/deep/ .el-upload--picture-card {
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    border: none !important;
+}
+/deep/ .disabled .el-upload--picture-card { // 图片上传张数限制，隐藏
+    display: none;
+}
+/deep/ .el-upload-list--picture-card .el-upload-list__item {
+    width: 90px;
+    height: 90px;
+}
+/deep/ .el-radio-group {
+    // margin-top: 8px !important;
+}
+/deep/ .el-dialog__body {
+    padding: 15px 20px;
+    border: none;
+}
+.btns {
+    display: flex;
+}
+.image-dialog {
+    /deep/ .el-dialog {
+        flex-direction: column;
+        div {
+            border: none;
+        }
+    }
+}
+/deep/ .el-upload--picture-card i {
+    font-size: 14px;
+    color: #fff;
+}
